@@ -1,0 +1,234 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Delius&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  padding-top: 1rem;
+}
+
+.view-one {
+  padding: 1rem 5rem;
+}
+.view-one h1 {
+  color: black;
+  font-family: "Mouse Memoirs", serif;
+  font-weight: 100;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px #ababab;
+}
+.view-one .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.view-one .nav .nav-links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.view-one .nav .nav-links .nav-links,
+.view-one .nav .nav-links li,
+.view-one .nav .nav-links a {
+  list-style: none;
+  padding: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline;
+  text-decoration: none;
+  color: black;
+  font-family: "DM Serif Text", serif;
+  font-weight: 10;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+.view-one .nav .btn {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  padding: 0.5em 0.7em;
+  border-radius: 2rem;
+  font-family: "Mouse Memoirs", serif;
+}
+
+.view-two .left-view {
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.view-two .left-view h1 {
+  color: black;
+  font-family: "Delius", serif;
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+.view-two .left-view h1 span {
+  opacity: 0.3;
+  font-weight: 100;
+}
+.view-two .left-view p {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: "Playfair Display", serif;
+}
+.view-two .primary-btn {
+  border: 2px solid #000;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  padding: 8px 1.1em;
+  border-radius: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  font-family: "Delius", serif;
+}
+.view-two .primary-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+@media (max-width: 992px) {
+  .view-one {
+    padding: 1rem 1rem;
+  }
+  .view-one .navbar {
+    display: none;
+  }
+  .view-one h1 {
+    color: black;
+    font-family: "Mouse Memoirs", serif;
+    font-weight: 100;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px #ababab;
+  }
+  .view-one .menu {
+    width: 40px;
+    height: 40px;
+  }
+  .view-one .btn {
+    display: none;
+  }
+  .grid-view {
+    display: grid;
+    gap: 5px;
+    padding: 0.5rem;
+    grid-template-areas: "a b" "a b" "a b" "a c" "a c" "a c";
+  }
+  .grid-view .img-1 {
+    grid-area: a;
+    width: 100%;
+    height: 80%;
+    margin-top: 2.5rem;
+    aspect-ratio: 9/16;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  }
+  .grid-view .img-2 {
+    grid-area: b;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  }
+  .grid-view .img-3 {
+    grid-area: c;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 2/1;
+    -o-object-position: 40% 20%;
+       object-position: 40% 20%;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  }
+  .grid-view img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 993px) {
+  .menu {
+    display: none;
+  }
+  .view-two {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .view-two .left-view {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 90%;
+    padding: 3rem;
+  }
+  .view-two .left-view h1 {
+    color: black;
+    font-family: "Delius", serif;
+    font-size: 6rem;
+    line-height: 1.2;
+  }
+  .right-view {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  .grid-view {
+    display: grid;
+    padding: 2rem;
+    gap: 1rem;
+    grid-template-areas: "a b" "a b" "a b" "a c" "a c" "a c";
+  }
+  .grid-view .img-1 {
+    grid-area: a;
+    width: 100%;
+    height: 80%;
+    margin-top: 2.5rem;
+    aspect-ratio: 9/16;
+  }
+  .grid-view .img-2 {
+    grid-area: b;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+  }
+  .grid-view .img-3 {
+    grid-area: c;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 2/1;
+    -o-object-position: 40% 20%;
+       object-position: 40% 20%;
+  }
+  .grid-view img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+    box-shadow: rgb(17, 31, 24) 0px 48px 100px 5px;
+  }
+}/*# sourceMappingURL=style.css.map */
