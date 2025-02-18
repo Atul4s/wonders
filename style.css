@@ -504,7 +504,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   .view-four .card img {
-    width: 180px;
+    width: 190px;
     border-radius: 16px;
     -o-object-fit: cover;
        object-fit: cover;
