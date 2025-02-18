@@ -72,9 +72,18 @@ main {
       background: rgb(0, 0, 0);
       padding: 0.5em 0.7em;
       border-radius: 2rem;
+      transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
       font-family: "Mouse Memoirs", serif;
+      
+      
+    }
+    
+    .btn:hover {
+      background: #fff;
+      color: #000;
     }
   }
+  
 }
 
 .view-two {
@@ -89,10 +98,13 @@ main {
       font-family: "Delius", serif;
       font-size: 3.5rem;
       line-height: 1.2;
+     
 
       span {
         opacity: 0.3;
         font-weight: 100;
+        
+        
       }
     }
 
@@ -124,6 +136,12 @@ main {
     color: #000;
   }
 }
+
+
+
+
+
+
 
 @media /* mobile*/ (max-width: 992px) {
   .view-one {
@@ -194,9 +212,221 @@ main {
     img {
       object-fit: cover;
       border-radius: 10px;
+      
     
     }
   }
+
+
+  .view-three{
+
+    .top-desti{
+      padding: 1rem 1rem;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      justify-content: center;
+     
+  
+      h1{
+        color: black;
+        font-family: "Delius", serif;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin: .1rem;
+      }
+    }
+  
+    .img-raw{
+      width: 100%;
+      display: inline-block;
+      overflow: auto;
+      white-space: nowrap;
+      padding: 1rem 1rem;
+      
+      
+  
+  
+      .imgt{
+        width: 80%;
+        aspect-ratio: 1/1;
+        margin: .5rem;
+        filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+        object-fit: cover;
+       border-radius: 10px;
+  
+  
+      }
+    }
+  
+  }
+
+  .view-four{
+      padding: 1rem 1rem;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      justify-content: center;
+     
+       
+    .hstory {
+      color: black;
+      font-family: "Mouse Memoirs", serif;
+      font-weight: 100;
+      font-size: 2.5rem;
+      padding: 1rem;
+      text-shadow: 1px 1px 1px #ababab;
+    }
+  
+    .story {
+     width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    
+    }
+  
+  
+    .left-story{
+      width: 100%;
+      padding: 1rem;
+  
+      h2{
+        color: black;
+        font-family: "Delius", serif;
+        font-size: 2rem;
+        font-weight: lighter;
+        margin: 1rem 1rem;
+        width: 100%;
+        
+      }
+  
+       img{
+        width: 100%;
+        aspect-ratio: 2/1;
+        filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+        object-fit: cover;
+       border-radius: 10px;
+       
+      }
+     
+      p{
+        
+        font-weight: 100;
+        margin-left: 1rem;
+        width: 91%;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        line-height: 1.4;
+        font-family: "Playfair Display", serif;
+      }
+  
+      .checkbtn {
+        border: 2px solid #000;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+        font-size: .8rem;
+        margin-top: .5rem;
+        padding: 8px 1.1em;
+        border-radius: 3rem;
+        font-weight: 400;
+        margin-left: 1rem;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        font-family: "Delius", serif;
+      }
+      
+      .checkbtn:hover {
+        background: #fff;
+        color: #000;
+      }
+  
+    }
+  
+
+
+    .cont-raw{
+    width: 100%;
+    display: inline-block;
+      overflow: auto;
+      white-space: wrap;
+      padding: 1rem 1rem;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+     
+     
+    
+    
+
+      
+  }
+  .card {
+      width: 100%;
+      background: white;
+      border-radius: 16px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 1rem 1rem;
+      
+  }
+  .card img {
+    width: 250px;
+    height: 100%;
+    aspect-ratio: 1/1;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+    object-fit: cover;
+    border-radius: 10px;
+    border: dashed rgb(225, 167, 167);
+    
+      
+  }
+  .card-content {
+    width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 1px;
+      padding: .5rem;
+      
+  }
+  .date {
+      color: #a1a1a1;
+      font-size: 16px;
+    
+  }
+  .title {
+     
+      font-size: 1.5rem;
+      font-weight: 400;
+     text-align: center;
+      color: black;
+        font-family: "Delius", serif;
+        width: 100%;
+        font-weight: bold;
+  }
+  .description {
+      font-size: 20px;
+      color: #555;
+      text-align: center;
+      width: 100%;
+      
+      
+  }
+  
+  }
+  
+
+
+
+
 }
 
 @media /* Laptop*/ (min-width: 993px) {
@@ -273,4 +503,206 @@ main {
       box-shadow: rgba(17, 31, 24, ) 0px 48px 100px 5px;
     }
   }
+
+
+
+  .view-three{
+
+    .top-desti{
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      justify-content: center;
+     
+  
+      h1{
+        color: black;
+        font-family: "Delius", serif;
+        font-size: 3.5rem;
+        line-height: 1.2;
+      }
+  
+  
+      .img-raw{
+  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 2rem;
+        
+  
+  
+        .imgt{
+          width: 20%;
+          margin-top: 2.5rem;
+          aspect-ratio: 1/1;
+          filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+          object-fit: cover;
+         border-radius: 10px;
+  
+  
+        }
+      }
+    }
+  }
+  
+
+.view-four{
+  
+     
+  .hstory {
+    color: black;
+    font-family: "Mouse Memoirs", serif;
+    font-weight: 100;
+    font-size: 4rem;
+    padding: 2rem;
+    text-shadow: 1px 1px 1px #ababab;
+  }
+
+  .story {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+
+  .left-story{
+    width: 100%;
+    padding: 1rem;
+
+    h2{
+      color: black;
+      font-family: "Delius", serif;
+      font-size: 2rem;
+      font-weight: lighter;
+      margin-left: 1rem;
+      margin: 1rem 1rem;
+      
+    }
+
+     img{
+      width: 90%;
+      margin-left: 1rem;
+      aspect-ratio: 2/1;
+      filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+      object-fit: cover;
+     border-radius: 10px;
+     background-color: aqua;
+    }
+   
+    p{
+      
+      font-weight: 100;
+      margin-left: 1rem;
+      width: 91%;
+      color: rgb(0, 0, 0);
+      font-size: 1rem;
+      line-height: 1.4;
+      font-family: "Playfair Display", serif;
+    }
+
+    .checkbtn {
+      border: 2px solid #000;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+      font-size: .8rem;
+      margin-top: .5rem;
+      padding: 8px 1.1em;
+      border-radius: 3rem;
+      font-weight: 400;
+      margin-left: 1rem;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      font-family: "Delius", serif;
+    }
+    
+    .checkbtn:hover {
+      background: #fff;
+      color: #000;
+    }
+
+  }
+
+  .container {
+    width: 100%;
+    padding: 1rem;
+}
+.card {
+  width: 100%;
+    display: flex;
+    background: white;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    margin-right: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    width: 170px;
+    border-radius: 16px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    margin-right: 15px;
+    border: dashed rgba(10, 8, 8, 0.386);
+}
+.card-content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    padding: 1rem;
+    
+}
+.date {
+    color: #a1a1a1;
+    font-size: 16px;
+  
+}
+.title {
+   
+    font-size: 18px;
+    font-weight: 400;
+    
+   
+    color: black;
+      font-family: "Delius", serif;
+    
+      font-weight: bold;
+}
+.description {
+    font-size: 20px;
+    color: #555;
+    
+}
+
+}
+
+
+}
+
+
+.view-five{
+  margin-bottom: 1rem;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+footer{
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px #ababab;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  margin: 2rem;
+  font-family: "Delius", serif;
+ 
+  
 }
