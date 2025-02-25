@@ -245,6 +245,9 @@ main {
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 10px;
+    animation: rotateMobile;
+    animation-timeline: view();
+    animation-range: entry 500px;
   }
   .view-four .left-story p {
     font-weight: 100;
@@ -274,6 +277,11 @@ main {
   .view-four .left-story .checkbtn:hover {
     background: #fff;
     color: #000;
+  }
+  @keyframes rotateMobile {
+    to {
+      transform: scale(1.1) translateY(-5%);
+    }
   }
   .view-four .cont-raw {
     width: 100%;
@@ -424,6 +432,16 @@ main {
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 10px;
+    animation: rotateAni;
+    animation-timeline: view();
+  }
+  @keyframes rotateAni {
+    from {
+      transform: scale(0) translateY(0%);
+    }
+    to {
+      transform: scale(0.9) translateY(-30%);
+    }
   }
   .view-four .hstory {
     color: black;
