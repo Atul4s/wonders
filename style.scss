@@ -310,8 +310,8 @@ main {
         filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
         object-fit: cover;
        border-radius: 10px;
-       animation: rotateMobile;
-      animation-timeline: view();
+      //  animation: rotateMobile;
+      // animation-timeline: view();
       // animation-range: cover 1px;
       animation-range: entry 500px;
        
@@ -353,12 +353,12 @@ main {
       }
   
 
-      @keyframes rotateMobile {
+    //   @keyframes rotateMobile {
       
-      to{
-        transform: scale(1.1) translateY(-5%);
-      }
-    }
+    //   to{
+    //     transform: scale(1.1) translateY(-5%);
+    //   }
+    // }
 
 
 
@@ -562,9 +562,9 @@ main {
           filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
           object-fit: cover;
          border-radius: 10px;
-        //  transition: transform .5s ease-in-out;
-        animation: rotateAni ;
-         animation-timeline: view();
+        
+        // animation: rotateAni ;
+        //  animation-timeline: view();
          
     
          
@@ -576,19 +576,17 @@ main {
   }
   
   
-  // .imgt:hover {
-  //   transform: scale(2) rotate(25deg);
-  // }
 
-@keyframes rotateAni {
-  from{
-    transform: scale(0) translateY(0%);
-}
 
-to{
-  transform: scale(.9) translateY(-30%);
-}
-}
+//  @keyframes rotateAni {
+//    from{
+//     transform: scale(0) translateY(0%);
+//  }
+
+//  to{
+//    transform: scale(.9) translateY(-30%);
+//  }
+//  }
 
 
 
@@ -737,6 +735,10 @@ to{
   width: 100%;
   text-align: center;
 }
+
+
+
+
 
 footer{
   font-size: 1.2rem;
