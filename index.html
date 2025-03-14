@@ -16,9 +16,13 @@
     />
    
     <link rel="stylesheet" href="style.css" />
+    <link href="
+    https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+    " rel="stylesheet">
 
   </head>
   <body>
+    <div data-scroll-container>   
     <main class="homee" >
       <section class="view-one">
         <div class="nav">
@@ -93,7 +97,7 @@
       </section>
 
       <section class="view-four">
-        <h1 class="hstory" data-scroll data-scroll-speed="3" >Latest Stories</h1>
+        <h1 class="hstory" data-scroll data-scroll-speed="1" >Latest Stories</h1>
         <div class="story">
 
           
@@ -143,7 +147,7 @@
 
 <section class="view-five" >
 
-<footer  >
+<footer >
   <p>Developed by Atul<p>
   <a href="https://github.com/Atul4s">Github</a></p>
 </footer>
@@ -151,8 +155,9 @@
 </section>
 
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"> -->
+  </div>
+  <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
+   
 
     <script src="app.js"></script>
   </body>

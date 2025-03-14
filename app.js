@@ -1,6 +1,4 @@
-const scroll = new LocomotiveScroll(
-    {
-        el:document.querySelector(".homee"),
-        smooth:true
-    }
-);
+const scroller = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+  })
