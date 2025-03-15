@@ -1,5 +1,12 @@
 const scroller = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
+    el: document.querySelector(".homee"),
     smooth: true,
-    lerp:0.1,
+    smartphone: {
+      smooth: true
+  },
+  tablet: {
+      smooth: true
+  },
+   
+lerp:0.1,
   })
